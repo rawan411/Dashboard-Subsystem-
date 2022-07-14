@@ -1,0 +1,174 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Rawan Waleed Ahmed, Student, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Rawan Waleed Ahmed\Documents\Lap_time_sec\MDK-ARM\Lap_time_sec.uvprojx
+Project File Date:  05/19/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Lap_time_sec'
+assembling startup_stm32f103xb.s...
+compiling stm32f1xx_it.c...
+compiling Speed.c...
+Speed.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+Speed.c(28): warning:  #1-D: last line of file ends without a newline
+  }
+Speed.c: 2 warnings, 0 errors
+compiling RPM.c...
+RPM.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+RPM.c(91): warning:  #1-D: last line of file ends without a newline
+  }
+RPM.c: 2 warnings, 0 errors
+compiling UART1.c...
+UART1.c(5): warning:  #1-D: last line of file ends without a newline
+  CAN_HandleTypeDef hcan;
+UART1.c: 1 warning, 0 errors
+compiling stm32f1xx_hal_msp.c...
+compiling main.c...
+..\MDK-ARM\RPM.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\MDK-ARM\Speed.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\MDK-ARM\can_Rx.h(13): warning:  #1295-D: Deprecated declaration CAN_Config_filter - give arg types
+  void CAN_Config_filter();
+..\MDK-ARM\can_Rx.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\MDK-ARM\Throttle.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\MDK-ARM\BL.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(155): warning:  #177-D: variable "Cmd_End1"  was declared but never referenced
+  	uint8_t Cmd_End1[3]={0xFF,0xFF,0xFF};
+../Core/Src/main.c(218): warning:  #177-D: variable "draw"  was declared but never referenced
+    uint8_t draw[5]="cirs ";
+../Core/Src/main.c(219): warning:  #177-D: variable "Red"  was declared but never referenced
+  	uint8_t Red[3]="RED";
+../Core/Src/main.c(220): warning:  #177-D: variable "black"  was declared but never referenced
+  	uint8_t black[5]="BLACK";
+../Core/Src/main.c(221): warning:  #177-D: variable "buf4"  was declared but never referenced
+  	uint8_t buf4=',';
+../Core/Src/main.c(222): warning:  #177-D: variable "buf5"  was declared but never referenced
+  	uint8_t buf5=' ';
+../Core/Src/main.c(223): warning:  #177-D: variable "buf6"  was declared but never referenced
+  	uint8_t buf6[2]="2,";
+../Core/Src/main.c(224): warning:  #177-D: variable "buf_val"  was declared but never referenced
+  	uint8_t buf_val[4];
+../Core/Src/main.c(225): warning:  #177-D: variable "temp"  was declared but never referenced
+  	uint32_t temp;
+../Core/Src/main.c(522): warning:  #167-D: argument of type "volatile CAN_RxHeaderTypeDef *" is incompatible with parameter of type "CAN_RxHeaderTypeDef *"
+  	if(HAL_CAN_GetRxMessage(hcan,CAN_RX_FIFO0,&CANRxHeader,ReceivedCANMessage)==HAL_OK)
+../Core/Src/main.c(541): warning:  #550-D: variable "temp"  was set but never used
+  		uint8_t temp[2];
+../Core/Src/main.c(568): warning:  #550-D: variable "Steering"  was set but never used
+  		uint8_t Steering[2];
+../Core/Src/main.c(571): warning:  #177-D: variable "Break_switch"  was declared but never referenced
+  		uint8_t Break_switch=ReceivedCANMessage[2];
+../Core/Src/main.c(600): warning:  #177-D: variable "Cmd_End1"  was declared but never referenced
+  				uint8_t Cmd_End1[3]={0xFF,0xFF,0xFF};
+../Core/Src/main.c(602): warning:  #177-D: variable "picdel"  was declared but never referenced
+  				uint8_t picdel[]="vis p5,0";
+../Core/Src/main.c(616): warning:  #177-D: variable "Cmd_End1"  was declared but never referenced
+  				uint8_t Cmd_End1[3]={0xFF,0xFF,0xFF};
+../Core/Src/main.c(618): warning:  #177-D: variable "picdel"  was declared but never referenced
+  				uint8_t picdel[]="vis p5,0";
+../Core/Src/main.c: 23 warnings, 0 errors
+compiling lap_time.c...
+lap_time.c(518): warning:  #1-D: last line of file ends without a newline
+  }
+lap_time.c: 1 warning, 0 errors
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling can_Rx.c...
+can_Rx.h(13): warning:  #1295-D: Deprecated declaration CAN_Config_filter - give arg types
+  void CAN_Config_filter();
+can_Rx.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+can_Rx.c: 2 warnings, 0 errors
+compiling warnning_message.c...
+warnning_message.c(33): warning:  #1-D: last line of file ends without a newline
+  }
+warnning_message.c(28): warning:  #177-D: variable "pic"  was declared but never referenced
+  				uint8_t pic[]="vis p5,1";
+warnning_message.c: 2 warnings, 0 errors
+compiling Throttle.c...
+Throttle.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+Throttle.c(63): warning:  #1-D: last line of file ends without a newline
+  }
+Throttle.c(13): warning:  #177-D: variable "buf_val"  was declared but never referenced
+  	uint8_t buf_val[4];
+Throttle.c: 3 warnings, 0 errors
+compiling BL.c...
+BL.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+BL.c(51): warning:  #1-D: last line of file ends without a newline
+  }
+BL.c(12): warning:  #177-D: variable "picdel1"  was declared but never referenced
+  	uint8_t picdel1[]="vis p5,0";
+BL.c: 3 warnings, 0 errors
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_can.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_exti.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_hal_uart.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_tim.c...
+linking...
+Program Size: Code=10912 RO-data=292 RW-data=96 ZI-data=1880  
+FromELF: creating hex file...
+"Lap_time_sec\Lap_time_sec.axf" - 0 Error(s), 39 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Lap_time_sec
+  C:\Users\Rawan Waleed Ahmed\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\Rawan Waleed Ahmed\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+Build Time Elapsed:  00:00:09
+</pre>
+</body>
+</html>
