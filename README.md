@@ -7,3 +7,4 @@ I am responsible for:
 •	Designing the PCB for the dashboard system.
 •	Controlling all buttons and switches on the steering wheel.
 •	Drawing Live track on the Dashboard.
+![Screenshot 2022-07-14 232050](https://user-images.githubusercontent.com/70521310/179088327-bfb5ddf5-a2a7-45d2-ac33-05086ef44a06.png)
